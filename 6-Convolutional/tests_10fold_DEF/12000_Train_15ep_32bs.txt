@@ -1,0 +1,155 @@
+
+Dataset:  DemandBasedDestroyCustomer.csv
+Fold 1:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8096885813148789
+Test F1-score: 0.8063380281690141
+Test Confusion Matrix:
+ [[239  50]
+ [ 60 229]]
+Test TP: 229
+Test TN: 239
+Test FP: 50
+Test FN: 60
+
+###########################################################################
+
+Fold 2:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.7993079584775087
+Test F1-score: 0.8040540540540541
+Test Confusion Matrix:
+ [[224  65]
+ [ 51 238]]
+Test TP: 238
+Test TN: 224
+Test FP: 65
+Test FN: 51
+
+###########################################################################
+
+Fold 3:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8114186851211073
+Test F1-score: 0.8117443868739205
+Test Confusion Matrix:
+ [[234  55]
+ [ 54 235]]
+Test TP: 235
+Test TN: 234
+Test FP: 55
+Test FN: 54
+
+###########################################################################
+
+Fold 4:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8148788927335641
+Test F1-score: 0.8126094570928195
+Test Confusion Matrix:
+ [[239  50]
+ [ 57 232]]
+Test TP: 232
+Test TN: 239
+Test FP: 50
+Test FN: 57
+
+###########################################################################
+
+Fold 5:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8304498269896193
+Test F1-score: 0.832764505119454
+Test Confusion Matrix:
+ [[236  53]
+ [ 45 244]]
+Test TP: 244
+Test TN: 236
+Test FP: 53
+Test FN: 45
+
+###########################################################################
+
+Fold 6:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8356401384083045
+Test F1-score: 0.8347826086956521
+Test Confusion Matrix:
+ [[243  46]
+ [ 49 240]]
+Test TP: 240
+Test TN: 243
+Test FP: 46
+Test FN: 49
+
+###########################################################################
+
+Fold 7:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.801038062283737
+Test F1-score: 0.8099173553719009
+Test Confusion Matrix:
+ [[218  71]
+ [ 44 245]]
+Test TP: 245
+Test TN: 218
+Test FP: 71
+Test FN: 44
+
+###########################################################################
+
+Fold 8:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8096885813148789
+Test F1-score: 0.7985347985347985
+Test Confusion Matrix:
+ [[250  39]
+ [ 71 218]]
+Test TP: 218
+Test TN: 250
+Test FP: 39
+Test FN: 71
+
+###########################################################################
+
+Fold 9:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8252595155709342
+Test F1-score: 0.8153564899451554
+Test Confusion Matrix:
+ [[254  35]
+ [ 66 223]]
+Test TP: 223
+Test TN: 254
+Test FP: 35
+Test FN: 66
+
+###########################################################################
+
+Fold 10:
+Dataset:  DemandBasedDestroyCustomer.csv
+Test Accuracy: 0.8339100346020761
+Test F1-score: 0.8378378378378379
+Test Confusion Matrix:
+ [[234  55]
+ [ 41 248]]
+Test TP: 248
+Test TN: 234
+Test FP: 55
+Test FN: 41
+
+###########################################################################
+
+
+********************
+
+Dataset:  DemandBasedDestroyCustomer.csv
+Final test metrics after  10  folds:
+
+Average accuracy: 0.8171280276816608 
+ Average F1:  0.8163939521694606
+Dev Std accuracy: 0.012620274204039373 
+ Dev Std F1:  0.013104523956255299
+
+********************
+

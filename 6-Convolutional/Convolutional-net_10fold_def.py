@@ -15,9 +15,9 @@ from keras.layers import Embedding, Dense, Dropout
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, Conv1D, GlobalMaxPooling1D, Dense, Dropout
 from sklearn.model_selection import StratifiedKFold
-import random
-num='12000Train'          #
-epochs=20          #
+
+num='12000_Train'          #
+epochs=15          #
 batch_size=32       #
 
 dir = "1-Dataset\splitted_dataset"+str(num)    
@@ -62,7 +62,7 @@ for file in files:
         num_valori_unici = df_pos["Instance's Name"].nunique()
         num_for_instances=int(len(df_pos)/num_valori_unici)
         
-        print(num_for_instances)
+        #print(num_for_instances)
         df_neu=df[df['OF_Diff_Average']==0] 
 
 
@@ -71,15 +71,16 @@ for file in files:
         #df_totale = pd.concat([df_pos, df_neu_sample])
 
         #negative prese in ordine, le prime negative
-        df_neu_sample = df_neu.groupby("Instance's Name").head(num_for_instances)
+
+        df_neu_sample = df_neu.groupby("Instance's Name").head(num_for_instances).copy()
 
         while len(df_neu_sample) < len(df_pos):
             random_row = df_neu.sample(n=1)
             if not random_row.values.tolist() in df_neu_sample.values.tolist():
-                df_neu_sample = df_neu_sample.append(random_row, ignore_index=True)
+                df_neu_sample = pd.concat([df_neu_sample, random_row], ignore_index=True)
 
-        df_totale = pd.concat([df_pos, df_neu_sample])
-        print(len(df_neu_sample),len(df_pos))
+        df_totale = pd.concat([df_pos, df_neu_sample], ignore_index=True)
+        #print(len(df_neu_sample),len(df_pos))
         df_totale_shuffled = df_totale.sample(frac=1).reset_index(drop=True)
         df=df_totale_shuffled
         df = df.reset_index(drop=True)

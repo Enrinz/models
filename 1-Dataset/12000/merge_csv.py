@@ -9,7 +9,7 @@ output_file = '1-Dataset\\12000\DB-Output12000_FULL.csv'
 with open(output_file, 'w', newline='') as outfile:
     writer = csv.writer(outfile)
     header_written = False  # Aggiungi una variabile per tenere traccia se l'intestazione è già stata scritta
-    
+
     # Ciclo sui file di input
     for file_path in file_paths:
         with open(file_path, 'r') as infile:
